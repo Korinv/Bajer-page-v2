@@ -1,0 +1,14 @@
+.menu {
+  background-color: bisque;
+  grid-column: blank-left-start / blank-right-end;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  &__left {
+    grid-column: 1 / span 3;
+  }
+
+  &__right {
+    grid-column: 5 / span 3;
+  }
+}

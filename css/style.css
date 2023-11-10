@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.conatainer {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [blank-left-start] 8rem [blank-left-end full-start] minmax(6rem, 1fr) [center-start] repeat(5, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end blank-right-start] 8rem [blank-right-end]; }
+
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-family: BajerFont; }
+
+.heading-1 {
+  font-size: 9.8rem; }
+
+.heading-2 {
+  font-size: 6.2rem; }
+
+.heading-3 {
+  font-size: 4.4rem; }
+
+.about-us {
+  background-color: red; }
+
+.board {
+  background-color: blue; }
+
+.contact {
+  background-color: violet; }
+
+.footer {
+  background-color: aqua; }
+
+.future-events {
+  background-color: green; }
+
+.header {
+  grid-column: blank-left-start / blank-right-end;
+  text-align: center;
+  background-color: beige; }
+
+.members {
+  background-color: indigo; }
+
+.menu {
+  background-color: bisque;
+  grid-column: blank-left-start / blank-right-end;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); }
+  .menu__left {
+    grid-column: 1 / span 3; }
+  .menu__right {
+    grid-column: 5 / span 3; }
+
+.partners {
+  background-color: orange; }
+
+.rents {
+  background-color: yellow; }

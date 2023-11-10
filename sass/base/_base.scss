@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// Body element divided into 9 columns
+.conatainer {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [blank-left-start] 8rem [blank-left-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(5, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr)
+    [full-end blank-right-start] 8rem [blank-right-end];
+}

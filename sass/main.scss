@@ -1,4 +1,17 @@
+@import "abstracts/variables";
+
 @import "base/base";
 @import "base/typography";
+
+@import "layout/about-us";
+@import "layout/board";
+@import "layout/contact";
+@import "layout/footer";
+@import "layout/future-events";
+@import "layout/header";
+@import "layout/members";
+@import "layout/menu";
+@import "layout/partners";
+@import "layout/rents";
 
 @import "pages/home";
