@@ -1,4 +1,4 @@
-const sectionHeader = document.querySelector(".section-header");
+const sectionHeader = document.querySelector(".about-us");
 const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];

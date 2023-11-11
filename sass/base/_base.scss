@@ -8,15 +8,26 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 // Body element divided into 9 columns
-.conatainer {
+.container {
+  background-color: green;
+  color: #fff;
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: repeat(10, min-content);
+  // grid-template-rows: min-content min-content repeat(10, min-content 20rem);
   grid-template-columns:
-    [blank-left-start] 8rem [blank-left-end full-start] minmax(6rem, 1fr)
-    [center-start] repeat(5, [col-start] minmax(min-content, 14rem) [col-end])
-    [center-end] minmax(6rem, 1fr)
-    [full-end blank-right-start] 8rem [blank-right-end];
+    [blank-left-start] minmax(0, 10vw) [blank-left-end center-start] repeat(
+      5,
+      [col-start] minmax(min-content, 1fr) [col-end]
+    )
+    [center-end blank-right-start] minmax(0, 10vw) [blank-right-end];
+}
+
+.section {
+  background-color: $BackCol-sections;
+  grid-column: center-start / center-end;
+  padding: 0 3rem;
 }
