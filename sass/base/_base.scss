@@ -1,3 +1,11 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 *,
 *::after,
 *::before {
@@ -13,21 +21,22 @@ html {
 
 // Body element divided into 9 columns
 .container {
-  background-color: green;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #fff;
+  font-family: sans-serif;
   display: grid;
   grid-template-rows: repeat(10, min-content);
   // grid-template-rows: min-content min-content repeat(10, min-content 20rem);
   grid-template-columns:
-    [blank-left-start] minmax(0, 10vw) [blank-left-end center-start] repeat(
-      5,
-      [col-start] minmax(min-content, 1fr) [col-end]
-    )
+    [blank-left-start] minmax(0, 10vw) [blank-left-end center-start] 1fr
     [center-end blank-right-start] minmax(0, 10vw) [blank-right-end];
 }
 
 .section {
   background-color: $BackCol-sections;
   grid-column: center-start / center-end;
-  padding: 0 3rem;
+  padding: 0 4.8rem;
 }
