@@ -1,3 +1,10 @@
+// funcitons
+const changeOfState = function () {
+  navEl.classList.toggle("menu-open");
+  btnIcon1El.classList.toggle("icon-inactive");
+  btnIcon2El.classList.toggle("icon-inactive");
+};
+
 // Sticky navigation
 
 const sectionHeader = document.querySelector(".about-us");
@@ -26,17 +33,20 @@ const navEl = document.querySelector(".menu__nav");
 const btnIcon1El = document.querySelector(".btn-icon-1");
 const btnIcon2El = document.querySelector(".btn-icon-2");
 const menuBtnEl = document.querySelectorAll(".menu__button");
+const logoBtnEl = document.querySelector(".menu__logo--mobile");
 
 btnNavEl.addEventListener("click", function () {
-  navEl.classList.toggle("menu-open");
-  btnIcon1El.classList.toggle("icon-inactive");
-  btnIcon2El.classList.toggle("icon-inactive");
+  changeOfState();
 });
 
 menuBtnEl.forEach((btn) => {
   btn.addEventListener("click", function () {
-    navEl.classList.toggle("menu-open");
-    btnIcon1El.classList.toggle("icon-inactive");
-    btnIcon2El.classList.toggle("icon-inactive");
+    changeOfState();
   });
+});
+
+logoBtnEl.addEventListener("click", function () {
+  if (navEl.classList[1] === "menu-open") {
+    changeOfState();
+  }
 });
