@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
   align-items: center;
+  padding-bottom: 12.8rem;
 
   &__heading {
     grid-column: 1 / -1;
@@ -10,7 +11,7 @@
   }
 
   &__img {
-    width: 100%;
+    width: 90%;
     padding: 3.2rem;
     border-radius: 2px;
   }

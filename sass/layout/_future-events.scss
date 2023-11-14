@@ -1,6 +1,7 @@
 .future-events {
   display: flex;
   flex-direction: column;
+  padding-bottom: 12.8rem;
 
   &__heading {
     text-align: right;
@@ -9,6 +10,7 @@
   &__coming {
     font-size: 6.2rem;
     text-align: center;
+    padding-top: 9.6rem;
   }
 }
 
