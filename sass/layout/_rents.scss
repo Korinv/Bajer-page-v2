@@ -42,8 +42,12 @@
     padding: 3.2rem;
     justify-self: left;
 
-    @media only screen and (max-width: $bp-medium-small) {
+    @media only screen and (max-width: $bp-medium) {
       padding: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 2.4rem 1.2rem;
     }
   }
 

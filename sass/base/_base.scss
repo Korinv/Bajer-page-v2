@@ -57,11 +57,11 @@ html {
   grid-column: center-start / center-end;
   padding: 0 4.8rem;
 
-  @media only screen and (max-width: $bp-medium-small) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 0 2.4rem;
   }
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-small) {
     padding: 0 1.2rem;
   }
 }

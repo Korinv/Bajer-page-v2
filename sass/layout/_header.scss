@@ -6,4 +6,8 @@
   @media only screen and (max-width: $bp-hugely-large) {
     grid-column: center-start / center-end;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    display: none;
+  }
 }
