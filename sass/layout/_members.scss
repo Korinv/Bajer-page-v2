@@ -1,50 +1,121 @@
 .members {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: lefts;
+  justify-items: left;
+
+  @media only screen and (max-width: $bp-medium-large) {
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 8rem;
+  }
 
   &__heading {
     justify-self: right;
     margin-top: 6.4rem;
     margin-bottom: 3.2rem;
     grid-column: 1 / -1;
+
+    @media only screen and (max-width: $bp-smaller) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__dj {
     grid-column: 2 / 3;
     grid-row: 3 / 5;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / 2;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      grid-column: 1 / 2;
+    }
   }
 
   &__technical {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 2 / 3;
+    }
   }
 
   &__promotion {
     grid-column: 4 / 5;
     grid-row: 3 / 4;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 3 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+    }
   }
 
   &__finance {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 3 / 4;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      grid-column: 2 / 3;
+    }
   }
 
   &__partners {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 2 / 3;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      grid-column: 2 / 3;
+      grid-row: 5 / 6;
+    }
   }
 
   &__list {
     list-style: none;
     font-family: inherit;
     font-size: 2rem;
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+    }
   }
 
   &__member {
     span {
       font-weight: 700;
       font-size: 2.4rem;
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

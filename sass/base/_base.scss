@@ -17,6 +17,10 @@ FONT SIZE SYSTEM (px)
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
 }
 
 // Body element divided into 9 columns
@@ -34,10 +38,30 @@ html {
   grid-template-columns:
     [blank-left-start] minmax(0, 10vw) [blank-left-end center-start] 1fr
     [center-end blank-right-start] minmax(0, 10vw) [blank-right-end];
+
+  @media only screen and (max-width: $bp-huge) {
+    grid-template-columns:
+      [blank-left-start] minmax(0, 5vw) [blank-left-end center-start] 1fr
+      [center-end blank-right-start] minmax(0, 5vw) [blank-right-end];
+  }
+
+  @media only screen and (max-width: $bp-hugely-large) {
+    grid-template-columns:
+      [center-start] 1fr
+      [center-end];
+  }
 }
 
 .section {
   background-color: $BackCol-sections;
   grid-column: center-start / center-end;
   padding: 0 4.8rem;
+
+  @media only screen and (max-width: $bp-medium-small) {
+    padding: 0 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0 1.2rem;
+  }
 }

@@ -3,6 +3,34 @@
   flex-direction: column;
   padding-bottom: 12.8rem;
 
+  @media only screen and (max-width: $bp-large) {
+    padding-bottom: 9.6rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-large) {
+    padding-bottom: 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 6.4rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    padding-bottom: 4.8rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    padding-bottom: 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding-bottom: 2rem;
+  }
+
   .heading-2 {
     text-align: right;
   }
@@ -16,6 +44,26 @@
     text-align: center;
     transition: all 0.3s;
     padding: 3.2rem;
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-large) {
+      font-size: 6.2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      font-size: 5.2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4.4rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 3.6rem;
+    }
   }
 
   &__offer:hover,
@@ -24,7 +72,7 @@
   }
 
   &__trust {
-    padding: 3.2rem;
+    padding: 3.2rem 0;
   }
 
   &__logos {
@@ -36,12 +84,24 @@
     align-items: center;
 
     padding: 3.2rem;
+
+    @media only screen and (max-width: $bp-medium-large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__logo {
     width: 100%;
     filter: grayscale(1);
     transition: all 0.3s;
+
+    @media only screen and (max-width: 68.75em) {
+      filter: none;
+    }
   }
 
   &__logo--link:hover &__logo,

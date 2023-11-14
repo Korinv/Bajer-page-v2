@@ -4,6 +4,36 @@
   gap: 4.8rem;
   padding: 0 9.6rem;
   padding-bottom: 12.8rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-bottom: 9.6rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-large) {
+    padding-bottom: 8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 6.4rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-small) {
+    padding-bottom: 4.8rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 3.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    padding-bottom: 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding-bottom: 2rem;
+  }
 }
 
 .feature {
@@ -19,17 +49,101 @@
   text-align: center;
   border-radius: 5px;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 1.2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    gap: 0.8rem;
+  }
+
   &__text {
     font-size: 5.2rem;
     font-weight: 700;
 
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 3.6rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-large) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 2rem;
+    }
+
     &--long {
       font-size: 3rem;
       font-weight: 400;
+
+      @media only screen and (max-width: $bp-huge) {
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (max-width: $bp-medium-large) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: $bp-medium-small) {
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.6rem;
+      }
     }
   }
 
   &__icon {
     font-size: 6.2rem;
+
+    @media only screen and (max-width: $bp-huge) {
+      font-size: 5.2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-large) {
+      font-size: 4.4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 3.6rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-small) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 4.4rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 3rem;
+    }
   }
 }
