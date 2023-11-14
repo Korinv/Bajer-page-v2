@@ -1,3 +1,37 @@
 .rents {
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+  align-items: center;
+
+  &__heading {
+    grid-column: 1 / -1;
+    padding: 3.2rem;
+  }
+
+  &__img {
+    width: 100%;
+    padding: 3.2rem;
+    border-radius: 2px;
+  }
+
+  &__text {
+    padding: 3.2rem;
+    font-size: 4.4rem;
+    line-height: 1.2;
+  }
+
+  &__mail:link,
+  &__mail:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+  }
+
+  &__mail:hover,
+  &__mail:active {
+    transform: scale(1.01);
+    text-decoration: underline;
+  }
 }

@@ -8,6 +8,7 @@
 
   &__heading {
     grid-column: 1 / -1;
+    padding: 3.2rem;
   }
 
   &__img {
@@ -18,7 +19,6 @@
 
   &__text {
     padding: 3.2rem;
-    font-family: sans-serif;
     font-size: 2.4rem;
     line-height: 1.2;
   }

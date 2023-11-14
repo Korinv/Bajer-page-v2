@@ -36,7 +36,8 @@ html {
 .heading-2,
 .heading-3,
 .menu__button,
-.footer {
+.footer,
+.partners__offer {
   font-family: BajerFont; }
 
 .heading-1 {
@@ -76,14 +77,14 @@ html {
   gap: 2.4rem;
   align-items: center; }
   .about-us__heading {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    padding: 3.2rem; }
   .about-us__img {
     width: 100%;
     padding: 3.2rem;
     border-radius: 2px; }
   .about-us__text {
     padding: 3.2rem;
-    font-family: sans-serif;
     font-size: 2.4rem;
     line-height: 1.2; }
 
@@ -166,7 +167,60 @@ html {
     height: 9.6rem; }
 
 .partners {
-  background-color: orange; }
+  display: flex;
+  flex-direction: column; }
+  .partners .heading-2 {
+    text-align: right; }
+  .partners__offer:link, .partners__offer:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 9.6rem;
+    text-align: center;
+    transition: all 0.3s;
+    padding: 3.2rem; }
+  .partners__offer:hover, .partners__offer:active {
+    transform: scale(1.1); }
+  .partners__trust {
+    padding: 3.2rem; }
+  .partners__logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 0;
+    column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    padding: 3.2rem; }
+  .partners__logo {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 0.3s; }
+  .partners__logo--link:hover .partners__logo,
+  .partners__logo--link:active .partners__logo {
+    filter: none;
+    transform: scale(1.1); }
 
 .rents {
-  background-color: yellow; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+  align-items: center; }
+  .rents__heading {
+    grid-column: 1 / -1;
+    padding: 3.2rem; }
+  .rents__img {
+    width: 100%;
+    padding: 3.2rem;
+    border-radius: 2px; }
+  .rents__text {
+    padding: 3.2rem;
+    font-size: 4.4rem;
+    line-height: 1.2; }
+  .rents__mail:link, .rents__mail:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s; }
+  .rents__mail:hover, .rents__mail:active {
+    transform: scale(1.01);
+    text-decoration: underline; }

@@ -1,3 +1,51 @@
 .partners {
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+
+  .heading-2 {
+    text-align: right;
+  }
+
+  &__offer:link,
+  &__offer:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 9.6rem;
+    text-align: center;
+    transition: all 0.3s;
+    padding: 3.2rem;
+  }
+
+  &__offer:hover,
+  &__offer:active {
+    transform: scale(1.1);
+  }
+
+  &__trust {
+    padding: 3.2rem;
+  }
+
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 0;
+    column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+
+    padding: 3.2rem;
+  }
+
+  &__logo {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 0.3s;
+  }
+
+  &__logo--link:hover &__logo,
+  &__logo--link:active &__logo {
+    filter: none;
+    transform: scale(1.1);
+  }
 }
