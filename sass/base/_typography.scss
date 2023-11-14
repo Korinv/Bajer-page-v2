@@ -1,9 +1,12 @@
 .heading-1,
 .heading-2,
 .heading-3,
+.heading-4,
 .menu__button,
 .footer,
-.partners__offer {
+.partners__offer,
+.event__link,
+.future-events__coming {
   font-family: BajerFont;
 }
 
@@ -17,5 +20,12 @@
 }
 
 .heading-3 {
+  padding: 0 3.2rem;
   font-size: 4.4rem;
+}
+
+.heading-4 {
+  padding: 2.4rem;
+  font-size: 3.6rem;
+  line-height: 1;
 }

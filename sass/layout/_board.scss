@@ -1,3 +1,77 @@
 .board {
-  background-color: blue;
+  &__heading {
+    text-align: right;
+    margin-top: 3.2rem;
+  }
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  align-items: center;
+  justify-items: center;
+
+  &__heading-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+    &--left {
+      grid-column: 1 / 2;
+    }
+
+    &--right {
+      grid-column: 3 / 4;
+    }
+  }
+
+  &__img {
+    width: 60%;
+    border-radius: 5px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4rem;
+    gap: 0.4rem;
+
+    &--left {
+      grid-column: 2 / 4;
+      justify-self: left;
+    }
+
+    &--right {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      justify-self: right;
+    }
+  }
+
+  &__name {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__tel,
+  &__email {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    transform: translateX(5px);
+  }
 }

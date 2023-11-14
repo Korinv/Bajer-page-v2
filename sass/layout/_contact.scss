@@ -1,3 +1,15 @@
 .contact {
-  background-color: violet;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__heading {
+    grid-column: 1 / -1;
+  }
+
+  &__link-img {
+  }
+}
+
+.contacts {
+  grid-column: 1 / 2;
 }
