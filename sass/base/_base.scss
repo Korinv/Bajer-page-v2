@@ -25,6 +25,7 @@ html {
 
 // Body element divided into 9 columns
 .container {
+  overflow-x: hidden;
   background-color: #000;
   background-image: url(../img/background.webp);
   background-size: cover;
