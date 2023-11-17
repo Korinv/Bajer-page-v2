@@ -611,6 +611,9 @@ html {
         .event__img--right {
           grid-column: 1 / -1;
           margin-left: 0; } }
+      @media only screen and (max-width: 31.25em) {
+        .event__img--right {
+          grid-row: 5 / 6; } }
   .event__description {
     font-size: 2rem;
     line-height: 1.4;
@@ -638,6 +641,9 @@ html {
         .event__description--right {
           grid-column: 1 / -1;
           grid-row: 4 / 5; } }
+      @media only screen and (max-width: 31.25em) {
+        .event__description--right {
+          grid-row: 6 / 7; } }
   .event__link:link, .event__link:visited {
     grid-column: 1 / -1;
     display: inline-block;
