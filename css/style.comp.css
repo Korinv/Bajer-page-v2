@@ -33,9 +33,11 @@ html {
   grid-template-columns: [blank-left-start] minmax(0, 10vw) [blank-left-end center-start] 1fr [center-end blank-right-start] minmax(0, 10vw) [blank-right-end]; }
   @media only screen and (max-width: 100em) {
     .container {
+      overflow-x: hidden;
       grid-template-columns: [blank-left-start] minmax(0, 5vw) [blank-left-end center-start] 1fr [center-end blank-right-start] minmax(0, 5vw) [blank-right-end]; } }
   @media only screen and (max-width: 87.5em) {
     .container {
+      overflow-x: hidden;
       grid-template-columns: [center-start] 1fr [center-end]; } }
 
 .section {
@@ -233,6 +235,7 @@ html {
     margin-top: 3.2rem; }
 
 .member {
+  background-color: transparent;
   display: grid;
   grid-template-columns: 20% 1fr 20%;
   align-items: center;
@@ -542,7 +545,8 @@ html {
   align-items: center;
   justify-items: center;
   row-gap: 3.2rem;
-  margin-bottom: 2.4rem; }
+  margin-bottom: 2.4rem;
+  background-color: transparent; }
   @media only screen and (max-width: 31.25em) {
     .event {
       row-gap: 1.6rem; } }

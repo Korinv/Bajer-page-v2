@@ -41,12 +41,14 @@ html {
     [center-end blank-right-start] minmax(0, 10vw) [blank-right-end];
 
   @media only screen and (max-width: $bp-huge) {
+    overflow-x: hidden;
     grid-template-columns:
       [blank-left-start] minmax(0, 5vw) [blank-left-end center-start] 1fr
       [center-end blank-right-start] minmax(0, 5vw) [blank-right-end];
   }
 
   @media only screen and (max-width: $bp-hugely-large) {
+    overflow-x: hidden;
     grid-template-columns:
       [center-start] 1fr
       [center-end];
