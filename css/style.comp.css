@@ -911,6 +911,12 @@ html {
   .partners__logo--link:active .partners__logo {
     filter: none;
     transform: scale(1.1); }
+  .partners__link:link, .partners__link:visited {
+    display: inline-block;
+    color: inherit;
+    transition: all 0.3s; }
+  .partners__link:hover, .partners__link:active {
+    transform: translateY(-2px) scale(1.01); }
 
 .rents {
   display: grid;
@@ -988,3 +994,18 @@ html {
   .rents__mail:hover, .rents__mail:active {
     transform: translateY(-2px) scale(1.01);
     text-decoration: underline; }
+
+.przekier {
+  background-color: black;
+  font-family: BajerFont; }
+  .przekier--text {
+    color: white;
+    font-size: 6.2rem;
+    text-align: center; }
+    @media only screen and (max-width: 43.75em) {
+      .przekier--text {
+        font-size: 4.4rem; } }
+  .przekier--link:link, .przekier--link:visited {
+    color: white; }
+  .przekier--link:hover, .przekier--link:active {
+    color: white; }

@@ -1,0 +1,23 @@
+.przekier {
+  background-color: black;
+  font-family: BajerFont;
+  &--text {
+    color: white;
+    font-size: 6.2rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-medium-small) {
+      font-size: 4.4rem;
+    }
+  }
+
+  &--link:link,
+  &--link:visited {
+    color: white;
+  }
+
+  &--link:hover,
+  &--link:active {
+    color: white;
+  }
+}
